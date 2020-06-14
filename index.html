@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__heading">user registration form</h1>
+    </header>
+    <main class="form-main">
+      <form action="" class="form">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Login data</legend>
+          <label for="username" class="form__label"
+            >User name:&nbsp;
+            <input
+              id="username"
+              name="username"
+              class="form__input"
+              type="text"
+              placeholder="e.g. johnnieW"
+          /></label>
+          <label for="password" class="form__label"
+            >Password:&nbsp;
+            <input
+              id="password"
+              name="password"
+              class="form__input"
+              type="password"
+          /></label>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Personal data</legend>
+          <label for="first-name" class="form__label"
+            >First name:&nbsp;
+            <input
+              id="first-name"
+              name="first-name"
+              class="form__input"
+              type="text"
+              placeholder="e.g. John"
+          /></label>
+          <label for="last-name" class="form__label"
+            >Last name:&nbsp;
+            <input
+              id="last-name"
+              name="last-name"
+              class="form__input"
+              type="text"
+              placeholder="e.g. Wright"
+          /></label>
+          <label for="email" class="form__label"
+            >E-mail:&nbsp;
+            <input
+              id="email"
+              name="email"
+              class="form__input"
+              type="email"
+              placeholder="e.g. jwright@mail.com"
+          /></label>
+          <label for="phone" class="form__label"
+            >Phone:&nbsp;
+            <input
+              id="phone"
+              name="phone"
+              class="form__input"
+              type="tel"
+              placeholder="e.g. 555-000-555"
+          /></label>
+          <p class="form__text">
+            Gender:
+            <label for="male" class="form__label"
+              >Male<input
+                id="male"
+                name="gender"
+                class="form__input"
+                type="radio"
+            /></label>
+            <label for="female" class="form__label"
+              >Female<input
+                id="female"
+                name="gender"
+                class="form__input"
+                type="radio"
+            /></label>
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Address</legend>
+          <label for="street" class="form__label"
+            >Street:&nbsp;
+            <input
+              id="street"
+              name="street"
+              class="form__input"
+              type="text"
+              placeholder="e.g. High Street"
+          /></label>
+          <label for="city" class="form__label"
+            >City:&nbsp;
+            <input
+              id="city"
+              name="city"
+              class="form__input"
+              type="text"
+              placeholder="e.g. London"
+          /></label>
+          <label for="postcode" class="form__label"
+            >Postcode:&nbsp;
+            <input
+              id="postcode"
+              name="postcode"
+              class="form__input"
+              type="text"
+              placeholder="e.g. B73 5BL"
+          /></label>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Technology stack</legend>
+          <p class="form__text">
+            Experience:&nbsp;
+            <select class="form__select"
+              ><option value="0" class="form__option">None</option>
+              <option value="upto1" class="form__option">0-1 year</option>
+              <option value="upto2" class="form__option">1-2 years</option>
+              <option value="upto3" class="form__option">2-3 years</option>
+              <option value="over3" class="form__option">3+ years</option>
+            </select>
+          </p>
+          <p class="form__text form__text--technologies">
+            Technologies:
+            <label for="html" class="form__label"
+              ><input
+                id="html"
+                name="html"
+                class="form__input"
+                type="checkbox"
+              />HTML</label
+            >
+            <label for="css" class="form__label"
+              ><input
+                id="css"
+                name="css"
+                class="form__input"
+                type="checkbox"
+              />CSS</label
+            >
+            <label for="js" class="form__label"
+              ><input
+                id="js"
+                name="js"
+                class="form__input"
+                type="checkbox"
+              />JavaScript</label
+            >
+            <label for="react" class="form__label"
+              ><input
+                id="react"
+                name="react"
+                class="form__input"
+                type="checkbox"
+              />React</label
+            >
+            <label for="angular" class="form__label"
+              ><input
+                id="angular"
+                name="angular"
+                class="form__input"
+                type="checkbox"
+              />Angular</label
+            >
+            <label for="vue" class="form__label"
+              ><input
+                id="vue"
+                name="vue"
+                class="form__input"
+                type="checkbox"
+              />Vue</label
+            >
+            <label for="nodejs" class="form__label"
+              ><input
+                id="nodejs"
+                name="nodejs"
+                class="form__input"
+                type="checkbox"
+              />Node.js</label
+            >
+            <label for="git" class="form__label"
+              ><input
+                id="git"
+                name="git"
+                class="form__input"
+                type="checkbox"
+              />Git</label
+            >
+            <label for="git" class="form__label"
+              ><input
+                id="git"
+                name="git"
+                class="form__input"
+                type="checkbox"
+              />Photoshop</label
+            >
+          </p>
+          <label
+            for="additional-informations"
+            class="form__label form__label--additional-informations"
+            >Additional informations:
+            <textarea
+              id="additional-informations"
+              name="additional-informations"
+              class="form__input"
+              type="checkbox"
+            >
+HTML</textarea
+            >
+          </label>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>

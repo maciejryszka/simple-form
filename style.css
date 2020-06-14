@@ -1,0 +1,29 @@
+body {
+  background-color: rgba(56, 28, 20, 0.829);
+}
+
+.header__heading {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.form-main {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.form,
+.form__fieldset,
+.form__text--technologies {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  user-select: none;
+}
+
+.form__text {
+  margin: 0;
+}
