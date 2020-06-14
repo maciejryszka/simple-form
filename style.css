@@ -1,5 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: rgba(56, 28, 20, 0.829);
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: rgb(32, 32, 32);
+  background: linear-gradient(
+    225deg,
+    rgba(32, 32, 32, 1) 33%,
+    rgba(37, 68, 65, 1) 66%
+  );
+  color: #6a7b76;
 }
 
 .header__heading {
@@ -20,10 +38,76 @@ body {
   flex-direction: column;
 }
 
+.form__fieldset {
+  width: 400px;
+  margin: 10px auto;
+}
+
+.form__input {
+  width: 272px;
+  height: 24px;
+  position: absolute;
+  left: 100px;
+}
+
+.form__input--female,
+.form__input--male {
+  width: 13px;
+  height: 24px;
+  position: absolute;
+  left: calc(100% + 5px);
+  top: 0;
+}
+
 .form__label {
+  position: relative;
+  margin: 10px 0;
+  line-height: 24px;
   user-select: none;
 }
 
-.form__text {
+.form__label--female,
+.form__label--male {
+  position: absolute;
+  top: 0;
   margin: 0;
+}
+
+.form__label--female {
+  left: 180px;
+}
+
+.form__label--male {
+  left: 100px;
+}
+
+.form__submit {
+  margin: 10px auto;
+  text-transform: uppercase;
+}
+
+.form__text {
+  margin: 10px auto;
+  user-select: none;
+}
+
+.form__text--gender {
+  position: relative;
+  line-height: 24px;
+}
+
+.form__text--technologies .form__input {
+  width: 13px;
+  margin: 0;
+}
+
+.form__text--technologies > .form__label {
+  width: 120px;
+  margin: 0;
+}
+
+.form__textarea {
+  resize: none;
+  width: 372px;
+  height: 75px;
 }

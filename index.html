@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,7 +16,7 @@
       <h1 class="header__heading">user registration form</h1>
     </header>
     <main class="form-main">
-      <form action="" class="form">
+      <form action="http://dev.cotenfrontend.pl" class="form" method="POST">
         <fieldset class="form__fieldset">
           <legend class="form__legend">Login data</legend>
           <label for="username" class="form__label"
@@ -74,20 +75,23 @@
               type="tel"
               placeholder="e.g. 555-000-555"
           /></label>
-          <p class="form__text">
+          <p class="form__text form__text--gender">
             Gender:
-            <label for="male" class="form__label"
+            <label for="male" class="form__label form__label--male"
               >Male<input
                 id="male"
                 name="gender"
-                class="form__input"
+                value="male"
+                class="form__input form__input--male"
                 type="radio"
+                checked
             /></label>
-            <label for="female" class="form__label"
+            <label for="female" class="form__label form__label--female"
               >Female<input
                 id="female"
                 name="gender"
-                class="form__input"
+                value="female"
+                class="form__input form__input--female"
                 type="radio"
             /></label>
           </p>
@@ -101,7 +105,7 @@
               name="street"
               class="form__input"
               type="text"
-              placeholder="e.g. High Street"
+              placeholder="e.g. High Street 171/47b"
           /></label>
           <label for="city" class="form__label"
             >City:&nbsp;
@@ -200,10 +204,10 @@
                 type="checkbox"
               />Git</label
             >
-            <label for="git" class="form__label"
+            <label for="photoshop" class="form__label"
               ><input
-                id="git"
-                name="git"
+                id="photoshop"
+                name="photoshop"
                 class="form__input"
                 type="checkbox"
               />Photoshop</label
@@ -216,13 +220,12 @@
             <textarea
               id="additional-informations"
               name="additional-informations"
-              class="form__input"
-              type="checkbox"
-            >
-HTML</textarea
-            >
+              class="form__textarea"
+              placeholder="e.g. 3 years of experience in the JS project."
+            ></textarea>
           </label>
         </fieldset>
+        <input class="form__submit" type="submit" value="Submit" />
       </form>
     </main>
     <footer class="footer"></footer>
